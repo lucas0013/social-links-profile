@@ -1,0 +1,73 @@
+$primary-color: hsl(75, 94%, 57%);
+$neutral-color-1: hsl(0, 0%, 100%);
+$neutral-color-2: hsl(0, 0%, 20%);
+$neutral-color-3: hsl(0, 0%, 12%);
+$neutral-color-4: hsl(0, 0%, 8%);
+$font-size: 14px;
+
+@font-face {
+  font-family: 'Inter';
+  src: url(/assets/fonts/Inter-VariableFont_slnt\,wght.ttf);
+  font-weight: 400 600 700;
+}
+
+body {
+  background-color: $neutral-color-4;
+  padding: 15px;
+}
+
+main {
+  font-family: 'Inter', sans-serif;
+  color: $neutral-color-1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+h1,h2,h3,h4,h5,h6 {  
+  margin: 5px;
+}
+
+p {
+  font-size: $font-size;
+}
+
+a {
+  color: $neutral-color-1;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.attribution {
+  padding-top: 15px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: $neutral-color-3;
+  border-radius: 15px;
+  padding: 30px;
+  
+  .img {
+    border-radius: 50%;
+    width: 30%;
+  }
+
+  .green-color {
+    color: $primary-color;
+  }
+
+  div {
+    display: flex;
+    background-color: $neutral-color-2;
+    margin: 10px;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+}
